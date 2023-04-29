@@ -10,8 +10,6 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
-from ctypes import cast
-from email.policy import default
 from pathlib import Path
 from decouple import config, Csv
 
@@ -40,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'funil_vagas.base'
 ]
 
 MIDDLEWARE = [
